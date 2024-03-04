@@ -1,0 +1,15 @@
+[build-system]
+requires = ["wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+[tool.setuptools.sdist]
+formats = ["gztar"]
+
+[tool.setuptools.install]
+install-lib = "site-packages"
+install-scripts = "scripts"
+install-headers = "include"
+
+[tool.setuptools.wheel]
+universal = false
